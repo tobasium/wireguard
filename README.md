@@ -70,7 +70,7 @@ Danach können wir unseren LXC/CT starten und uns anmelden.
 Ich habe alle zur Installation notwendigen Befehle und Konfigurationsdateien in einem kleinen Shell-Skript zusammengefügt.
 Dazu also folgendes ausführen:
 ```
-wget [https://raw.githubusercontent.com/KleSecGmbH/ioBroker/main/wireguard/installer-pve.sh](https://raw.githubusercontent.com/tobasium/wireguard/main/wireguard/installer-pve.sh) -O installer-pve.sh && bash installer-pve.sh
+wget https://raw.githubusercontent.com/tobasium/wireguard/main/wireguard/installer-pve.sh -O installer-pve.sh && bash installer-pve.sh
 ```
 Der Installer läuft bis zu diesem Punkt automatisch durch. Die abgefragten Punkte wie im Bild gezeigt beantworten.
 ![0d8fa718-1ece-4745-aec7-94fcbdda4ec1-image.png](https://forum.iobroker.net/assets/uploads/files/1636368893614-0d8fa718-1ece-4745-aec7-94fcbdda4ec1-image.png) 
