@@ -141,14 +141,14 @@ function wgui_installer {
         elif  [[ $arch == arm* ]]; then
         wget https://github.com/ngoduykhanh/wireguard-ui/releases/download/v0.5.2/wireguard-ui-v0.5.2-linux-arm.tar.gz -O /opt/wireguard-ui/install.tar.gz
     fi
-    wget https://raw.githubusercontent.com/KleSecGmbH/ioBroker/main/wireguard/wgui.path -O /etc/systemd/system/wgui.path
+    wget https://raw.githubusercontent.com/tobasium/wireguard//main/wireguard/wgui.path -O /etc/systemd/system/wgui.path
     if [ -f "/bin/systemctl" ]; then
-    wget https://raw.githubusercontent.com/KleSecGmbH/ioBroker/main/wireguard/wgui-bin.service -O /etc/systemd/system/wgui.service
+    wget https://raw.githubusercontent.com/tobasium/wireguard//main/wireguard/wgui-bin.service -O /etc/systemd/system/wgui.service
     else
-    wget https://raw.githubusercontent.com/KleSecGmbH/ioBroker/main/wireguard/wgui-usr.service -O /etc/systemd/system/wgui.service     
+    wget https://raw.githubusercontent.com/tobasium/wireguard//main/wireguard/wgui-usr.service -O /etc/systemd/system/wgui.service     
     fi
     
-    wget https://raw.githubusercontent.com/KleSecGmbH/ioBroker/main/wireguard/wireguard-ui.service -O /etc/systemd/system/wireguard-ui.service
+    wget https://raw.githubusercontent.com/tobasium/wireguard//main/wireguard/wireguard-ui.service -O /etc/systemd/system/wireguard-ui.service
     
     cd /opt/wireguard-ui
     tar -xf install.tar.gz
